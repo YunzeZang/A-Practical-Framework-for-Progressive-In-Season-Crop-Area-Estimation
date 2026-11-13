@@ -1,0 +1,18 @@
+{
+  "method": "vehicle_uav",
+  "n_sample_units": 659,
+  "n_candidate_pls": 14237,
+  "n_pls": 22,
+  "n_vehicle_stops": 22,
+  "lscp_method": "exact",
+  "n_uavs": 2,
+  "n_uav_sorties": 100,
+  "uav_distance_km": 1277.765,
+  "uav_flight_time_h": 23.662,
+  "uav_time_h": 12.193,
+  "vehicle_distance_km": 227.474,
+  "vehicle_time_h": 4.217,
+  "pls_to_road_max_m": 0.0,
+  "seed": 2026,
+  "crs": "EPSG:32615"
+}

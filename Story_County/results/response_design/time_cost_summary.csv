@@ -1,0 +1,16 @@
+design,label,n_replicates,n_sample_units,n_stops,n_uav_sorties,vehicle_h,uav_h,stop_h,total_h,total_min_h,total_max_h
+conf95_d05,Vehicle optimization only,100,237,236.79,237.0,13.277,2.453,7.893,23.623,22.595,24.621
+conf95_d04,Vehicle optimization only,100,371,370.54,371.0,17.038,3.842,12.351,33.232,32.101,34.548
+conf95_d03,Vehicle optimization only,100,659,657.27,659.0,22.922,6.813,21.909,51.644,50.316,52.73
+conf95_d02,Vehicle optimization only,100,1482,1474.6,1482.0,33.016,15.396,49.153,97.565,96.183,99.046
+conf95_d01,Vehicle optimization only,100,5925,5833.61,5925.0,50.111,61.383,194.454,305.948,303.972,308.182
+conf95_d05,Vehicle–UAV optimization (1 UAV),100,237,18.93,53.55,3.424,12.3,0.631,16.354,15.428,17.622
+conf95_d04,Vehicle–UAV optimization (1 UAV),100,371,20.63,66.59,3.666,15.845,0.688,20.199,19.218,21.372
+conf95_d03,Vehicle–UAV optimization (1 UAV),100,659,22.23,93.24,3.91,22.856,0.741,27.506,26.416,28.573
+conf95_d02,Vehicle–UAV optimization (1 UAV),100,1482,25.4,161.6,4.282,40.805,0.847,45.934,43.569,47.198
+conf95_d01,Vehicle–UAV optimization (1 UAV),100,5925,33.42,435.42,5.123,114.735,1.114,120.972,113.184,127.055
+conf95_d05,Vehicle–UAV optimization (2 UAVs),100,237,18.93,62.86,3.424,7.068,0.631,11.123,10.336,11.896
+conf95_d04,Vehicle–UAV optimization (2 UAVs),100,371,20.63,77.94,3.666,8.962,0.688,13.316,12.634,14.271
+conf95_d03,Vehicle–UAV optimization (2 UAVs),100,659,22.23,102.42,3.91,12.541,0.741,17.191,16.566,18.002
+conf95_d02,Vehicle–UAV optimization (2 UAVs),100,1482,25.4,172.5,4.282,21.815,0.847,26.943,26.149,28.607
+conf95_d01,Vehicle–UAV optimization (2 UAVs),100,5925,33.42,444.19,5.123,58.81,1.114,65.046,60.828,68.855

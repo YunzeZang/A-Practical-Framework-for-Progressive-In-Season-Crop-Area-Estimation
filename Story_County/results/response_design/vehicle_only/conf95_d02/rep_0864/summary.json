@@ -1,0 +1,14 @@
+{
+  "method": "vehicle_only",
+  "n_sample_units": 1482,
+  "n_vehicle_stops": 1474,
+  "n_uavs": 1,
+  "n_uav_sorties": 1482,
+  "uav_distance_km": 840.504,
+  "uav_flight_time_h": 15.565,
+  "uav_time_h": 15.565,
+  "vehicle_distance_km": 1804.841,
+  "vehicle_time_h": 33.238,
+  "seed": 2026,
+  "crs": "EPSG:32615"
+}

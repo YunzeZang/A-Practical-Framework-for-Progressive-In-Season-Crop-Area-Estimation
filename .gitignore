@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+plan.gpkg
+!Yanting_County/results/response_design/plan.gpkg
+.vscode/
+*.aux.xml

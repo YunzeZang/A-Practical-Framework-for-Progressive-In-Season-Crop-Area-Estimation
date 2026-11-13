@@ -1,0 +1,27 @@
+# Yanting County (Sichuan, China), rapeseed 2024/25: practical experiment.
+# Maps: 3 m, Albers equal-area conic (WGS 84; central meridian 105.48 E; standard parallels 31.08 N and
+# 31.42 N; latitude of origin 31.25 N).
+#   initial map (design strata h): 0 = uncultivated, 1 = non-rapeseed, 2 = rapeseed, 255 = outside the county
+#   updated maps (classes k):      0 = uncultivated, 1 = non-rapeseed, 2 = rapeseed, 255 = outside the county
+# Sample units (data/sample_points): h = design stratum, y = reference label (1 = rapeseed, 0 = non-rapeseed).
+crop: rapeseed
+initial_date: "20241216"
+update_dates: ["20250116", "20250325", "20250419"]
+sensors: {"20241216": S2, "20250116": PS, "20250325": PS, "20250419": PS}
+census_area_ha: 17180                        # official rapeseed area of the 2024-2025 season
+
+# Response design
+routing:
+  seed: 2024
+  coverage_radius_m: 5000
+  uav_range_m: 15000
+  uav_speed_ms: 15
+  pls_spacing_m: 1000                        # 2 km in the field plan; at 2 km one sample unit has no
+                                             # candidate within 5 km on the connected road network
+  clip_buffer_m: 20000
+  roads:
+    class_field: fclass
+    excluded: [motorway]
+    fast_classes: [primary, secondary]
+    fast_kmh: 60
+    slow_kmh: 30

@@ -1,0 +1,33 @@
+# Story County (Iowa, USA), corn 2025: simulation experiment.
+# Maps: 10 m, EPSG:5070; 1 = corn, 0 = non-corn, 255 = outside the population.
+crop: corn
+initial_date: "20250620"
+update_dates: ["20250630", "20250710", "20250720", "20250730", "20250809", "20250819", "20250829"]
+
+# Sampling design and Monte Carlo simulation
+confidence: 0.95
+margins: [0.01, 0.02, 0.03, 0.04, 0.05]      # target half-widths of the 95 % confidence interval
+allocation_margin: 0.05                      # sample size of the allocation experiment (n = 237)
+allocations: [neyman, proportional, equal]
+n_replicates: 10000                          # replicates per design (M)
+n_base: 1000                                 # replicates 1 ... n_base use the first random stream
+seed: 2025                                   # seed of a design = seed + index of its half-width
+
+# Response design
+n_export: 100                                # replicates per design with exported sample points
+example_replicate: 75                        # replicate of the 5 % design used in Appendix B
+routing:
+  seed: 2026
+  coverage_radius_m: 5000
+  uav_range_m: 15000
+  uav_speed_ms: 15
+  pls_spacing_m: 500
+  clip_buffer_m: 20000
+  stop_minutes: 2                            # fixed stopping time per vehicle stop
+  roads:
+    class_field: highway
+    drivable: [motorway, trunk, primary, secondary, tertiary, unclassified, residential, living_street, road,
+               motorway_link, trunk_link, primary_link, secondary_link, tertiary_link]
+    fast_classes: [motorway, trunk, primary, motorway_link, trunk_link, primary_link]
+    fast_kmh: 90
+    slow_kmh: 50
